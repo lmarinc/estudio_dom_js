@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10: Agregar Elemento con `appendChild`</title>
+  </head>
+  <body>
+  <div id="contenedor">Contenido existente</div>
+  <button id="miBoton" onclick="crear()">Agregar Elemento</button>
+
+
+
+    <script>
+      function crear() {
+        const nuevo = document.createElement("div")
+        nuevo.innerHTML = "texto"
+        const cont = document.getElementById("contenedor")
+        cont.appendChild(nuevo)
+      }
+    </script>
+  </body>
+</html>
